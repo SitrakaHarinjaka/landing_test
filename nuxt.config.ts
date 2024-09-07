@@ -18,5 +18,10 @@ export default defineNuxtConfig({
        // Your settings.
       }),
     ],
+  },
+  app: {
+    head: {
+      title: 'Landing test'
+    }
   }
 })

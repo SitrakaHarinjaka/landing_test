@@ -41,4 +41,8 @@
    a {
       @apply no-underline text-[15px] leading-[28px] text-lightText transition-colors duration-300 ease-in hover:text-colorPrimary
    }
+
+   .button-primary {
+      @apply bg-colorPrimary border border-colorPrimary rounded-full text-lightText py-[16px] px-[62px] text-[20px] leading-[20px] tracking-[0.2px] text-center font-normal inline-block cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightText hover:text-colorPrimary;
+   }
 }
