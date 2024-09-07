@@ -45,4 +45,16 @@
    .button-primary {
       @apply bg-colorPrimary border border-colorPrimary rounded-full text-lightText py-[16px] px-[62px] text-[20px] leading-[20px] tracking-[0.2px] text-center font-normal inline-block cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightText hover:text-colorPrimary;
    }
+
+   .title-section {
+      @apply max-w-[560px] m-auto
+   }
+
+   .title-section h3 {
+      @apply text-[48px] leading-[55px] text-center tracking-[0.2px] text-titleSection font-normal
+   }
+
+   .title-section p {
+      @apply text-[28px] leading-[40px] text-center tracking-[0.2px] text-secondText my-7 font-normal
+   }
 }

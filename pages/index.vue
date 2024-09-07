@@ -1,6 +1,7 @@
 <template>
   <div>
     <SectionsBaneer/>
+    <SectionsFeature/>
   </div>
 </template>
 
