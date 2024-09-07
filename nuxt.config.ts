@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/ui", "@nuxtjs/tailwindcss"],
+  // modules: ["@nuxt/ui", "@nuxtjs/tailwindcss"],
   vite: {
     plugins: [
       svgLoader({

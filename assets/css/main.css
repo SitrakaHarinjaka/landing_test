@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+   @font-face {
+      font-family: 'Graphik-Regular';
+      src: url('@/assets/fonts/GraphikRegular.eot');
+      src: local('☺'), url('@/assets/fonts/GraphikRegular.woff') format('woff'), url('@/assets/fonts/GraphikRegular.ttf') format('truetype'), url('@/assets/fonts/GraphikRegular.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   
+   @font-face {
+      font-family: 'Graphik-Bold';
+      src: url('@/assets/fonts/GraphikBold.eot');
+      src: local('☺'), url('@/assets/fonts/GraphikBold.woff') format('woff'), url('@/assets/fonts/GraphikBold.ttf') format('truetype'), url('@/assets/fonts/GraphikBold.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+}
+
 @layer components {
    header.show {
       @apply hidden md:flex
