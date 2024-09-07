@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HelloWorld/>
+    <SectionsBaneer/>
   </div>
 </template>
 

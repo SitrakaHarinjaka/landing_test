@@ -10,6 +10,24 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      'colorPrimary': '#2091F9',
+      'lightText': '#fff',
+      'secondText': '#374754',
+      'titleSection': '#252B42',
+      'textinput': '#18171D',
+    },
+    screens: {
+      'sm': '576px',
+      'md': '768px',
+      'lg': '992px',
+      'xl': '1200px',
+      '2xl': '1400px',
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+    },
+
   },
   plugins: [],
 }

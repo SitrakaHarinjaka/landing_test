@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+   @font-face {
+      font-family: 'Graphik-Regular';
+      src: url('@/assets/fonts/GraphikRegular.eot');
+      src: local('☺'), url('@/assets/fonts/GraphikRegular.woff') format('woff'), url('@/assets/fonts/GraphikRegular.ttf') format('truetype'), url('@/assets/fonts/GraphikRegular.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   
+   @font-face {
+      font-family: 'Graphik-Bold';
+      src: url('@/assets/fonts/GraphikBold.eot');
+      src: local('☺'), url('@/assets/fonts/GraphikBold.woff') format('woff'), url('@/assets/fonts/GraphikBold.ttf') format('truetype'), url('@/assets/fonts/GraphikBold.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+}
+
+@layer components {
+   body {
+      @apply m-0 p-0
+   }
+
+   header.show {
+      @apply hidden md:flex
+   }
+
+   .container {
+      @apply w-full px-3 mx-auto max-w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
+   }
+
+   ul {
+      @apply p-0 m-0 list-none;
+   }
+
+   a {
+      @apply no-underline text-[15px] leading-[28px] text-lightText transition-colors duration-300 ease-in hover:text-colorPrimary
+   }
+
+   .button-primary {
+      @apply bg-colorPrimary border border-colorPrimary rounded-full text-lightText py-[16px] px-[62px] text-[20px] leading-[20px] tracking-[0.2px] text-center font-normal inline-block cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightText hover:text-colorPrimary;
+   }
+}
