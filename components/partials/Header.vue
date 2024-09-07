@@ -13,17 +13,17 @@
             <div class="social mr-[30px]">
                <nav class="social">
                   <ul>
-                     <li>
+                     <li class="inline-block mr-[30px]">
                         <a href="#">
                            <TwitterIcon/>
                         </a>
                      </li>
-                     <li>
+                     <li class="inline-block mr-[30px]">
                         <a href="#">
                            <FacebookIcon/>
                         </a>
                      </li>
-                     <li>
+                     <li class="inline-block mr-[30px]">
                         <a href="#">
                            <LinkedInIcon/>
                         </a>

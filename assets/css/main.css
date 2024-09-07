@@ -22,15 +22,23 @@
 }
 
 @layer components {
+   body {
+      @apply m-0 p-0
+   }
+
    header.show {
       @apply hidden md:flex
    }
 
    .container {
-      @apply w-[95%] mx-auto max-w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
+      @apply w-full px-3 mx-auto max-w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
    }
 
    ul {
       @apply p-0 m-0 list-none;
+   }
+
+   a {
+      @apply no-underline text-[15px] leading-[28px] text-lightText transition-colors duration-300 ease-in hover:text-colorPrimary
    }
 }

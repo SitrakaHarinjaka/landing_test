@@ -23,7 +23,11 @@ export default {
       'lg': '992px',
       'xl': '1200px',
       '2xl': '1400px',
-    }
+    },
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif'],
+    },
+
   },
   plugins: [],
 }

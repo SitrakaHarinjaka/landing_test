@@ -13,10 +13,10 @@
 <script lang="ts" setup>
   const menuItem = ref([
     { label: "Home", link: "#home" },
-    { label: "product", link: "#home" },
-    { label: "pricing", link: "#home" },
-    { label: "About", link: "#home" },
-    { label: "Contact", link: "#home" },
+    { label: "Product", link: "#product" },
+    { label: "Pricing", link: "#pricing" },
+    { label: "About", link: "#about" },
+    { label: "Contact", link: "#contact" },
   ]);
 </script>
 
