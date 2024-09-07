@@ -28,12 +28,12 @@
              <p class="text-[18px] leading-[25px] text-center tracking-[0.2px] font-normal my-4">Slate helps you see how many more days you need to work to reach your financial goal.</p>
           </div>
        </div>
-       <div class="video">
-          <div class="image-back">
-             <img src="./img/back-video.png" alt="">
+       <div class="video relative shadow-[0_8px_63px_rgba(0,_0,_0,_0.3)] rounded-[44.8123px] overflow-hidden">
+          <div class="image-back w-full absolute top-0 left-0">
+             <img src="~/assets/img/back-video.png" alt="" class="w-full h-auto">
           </div>
-          <div class="play-video">
-             <button id="play">
+          <div class="play-video absolute inset-0 h-max w-max m-auto z-[100]">
+             <button id="play" class="bg-none border-none cursor-pointer">
                 <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
                    <circle cx="93.8274" cy="94.0001" r="93.6985" fill="#2091F9" />
                    <g clip-path="url(#clip0_117_33)">
@@ -47,8 +47,8 @@
                 </svg>                  
              </button>
           </div>
-          <video class="video-play h-auto">
-             <source src="./videos/video.mp4" type="video/mp4">
+          <video class="video-play h-[725px] w-full object-cover">
+             <source src="/videos/video.mp4" type="video/mp4">
           </video>
        </div>
     </div>
