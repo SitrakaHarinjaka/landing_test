@@ -51,10 +51,10 @@
    }
 
    .title-section h3 {
-      @apply text-[48px] leading-[55px] text-center tracking-[0.2px] text-titleSection font-normal
+      @apply text-[48px] leading-[55px] tracking-[0.2px] text-titleSection font-normal
    }
 
    .title-section p {
-      @apply text-[28px] leading-[40px] text-center tracking-[0.2px] text-secondText my-7 font-normal
+      @apply text-[28px] leading-[40px] tracking-[0.2px] text-secondText font-normal
    }
 }
