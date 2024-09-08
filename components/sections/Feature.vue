@@ -29,11 +29,11 @@
           </div>
        </div>
        <div class="video relative shadow-[0_8px_63px_rgba(0,_0,_0,_0.3)] rounded-[44.8123px] overflow-hidden">
-          <div class="image-back w-full absolute top-0 left-0">
+          <div class="image-back w-full absolute top-0 left-0" :style="{ opacity: isPlaying ? '0' : '1' }">
              <img src="~/assets/img/back-video.png" alt="" class="w-full h-auto">
           </div>
           <div class="play-video absolute inset-0 h-max w-max m-auto z-[100]">
-             <button id="play" class="bg-none border-none cursor-pointer">
+             <button id="play" class="bg-none border-none cursor-pointer" @click="playVideo" :style="{ opacity: isPlaying ? '0' : '1' }">
                 <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
                    <circle cx="93.8274" cy="94.0001" r="93.6985" fill="#2091F9" />
                    <g clip-path="url(#clip0_117_33)">
@@ -47,7 +47,7 @@
                 </svg>                  
              </button>
           </div>
-          <video class="video-play h-[725px] w-full object-cover">
+          <video class="video-play h-[725px] w-full object-cover" ref="videoRef">
              <source src="/videos/video.mp4" type="video/mp4">
           </video>
        </div>
@@ -59,6 +59,20 @@
   import FontIcon from '@/assets/img/fonts.svg'
   import DesignIcon from '@/assets/img/design.svg'
   import ActionIcon from '@/assets/img/action.svg'
+
+   const videoRef = ref(null);
+   const isPlaying = ref(false);
+
+  const playVideo = () => {
+   const video = videoRef.value;
+      if (video.paused) {
+        isPlaying.value = true;
+        video.play();
+      } else {
+        isPlaying.value = false;
+        video.pause();
+      }
+  }
 </script>
 
 <style>
