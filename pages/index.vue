@@ -2,6 +2,7 @@
   <div>
     <SectionsBaneer/>
     <SectionsFeature/>
+    <SectionsOrganization/>
   </div>
 </template>
 
