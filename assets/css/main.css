@@ -57,4 +57,8 @@
    .title-section p {
       @apply text-[28px] leading-[40px] tracking-[0.2px] text-secondText font-normal
    }
+
+   input[type="text"] {
+      @apply bg-[#F4F4F4] border border-[#E8E8E8] box-border rounded-[39px] px-[39px] py-[19px] text-[14px] leading-[16px] tracking-[0.1px] text-textinput focus:outline-none focus-visible:outline-none;
+   }
 }

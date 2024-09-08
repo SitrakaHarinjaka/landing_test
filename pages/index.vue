@@ -3,6 +3,7 @@
     <SectionsBaneer/>
     <SectionsFeature/>
     <SectionsOrganization/>
+    <SectionsNewsLetter/>
   </div>
 </template>
 
