@@ -89,4 +89,28 @@
    #pricing .item#blue-template a.button-primary{
       @apply bg-lightText text-colorPrimary
    }        
+
+   footer a {
+      @apply inline-block;
+   }
+
+   footer .contact {
+      @apply sm:mx-auto;
+   }
+
+   footer .contact .social li {
+      @apply inline-block mr-[30px] mt-[20px];
+   }
+
+   footer .contat .social .ul {
+      @apply sm:text-center;
+   }
+
+   footer li {
+      @apply flex items-center mb-5;
+   }
+
+   footer span {
+      @apply text-lightText text-sm leading-7 tracking-[0.2px] ml-4; 
+   }
 }
