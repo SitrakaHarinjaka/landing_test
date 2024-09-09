@@ -2,8 +2,8 @@
   <section id="feature" class="mt-[115px]">
     <div class="container">
        <div class="title-section text-center">
-          <h3>Feature</h3>
-          <p class="my-7">Most calendars are designed for teams. Slate is designed for freelancers</p>
+          <h3 class="text-titleSection">Feature</h3>
+          <p class="text-secondText">Most calendars are designed for teams. Slate is designed for freelancers</p>
        </div>
        <div class="feature-item flex justify-center mt-[80px] mb-[132px]">
           <div class="item text-center max-w-[255px] my-0 mx-[24px] flex flex-col items-center">

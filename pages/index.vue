@@ -6,6 +6,7 @@
     <SectionsNewsLetter/>
     <SectionsPartners/>
     <SectionsTestimonial/>
+    <SectionsPricing/>
   </div>
 </template>
 

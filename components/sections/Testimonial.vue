@@ -1,7 +1,7 @@
 <template>
   <section id="testimonials" class="mb-[100px] flex flex-col items-center">
     <div class="title-section">
-        <h3 class="my-12">Testimonials</h3>         
+        <h3 class="text-titleSection">Testimonials</h3>         
     </div>
     <div class="testimonial-content  flex flex-col items-center">
         <div class="w-[150px] h-auto mb-[60px]">

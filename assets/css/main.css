@@ -51,14 +51,38 @@
    }
 
    .title-section h3 {
-      @apply text-[48px] leading-[55px] tracking-[0.2px] text-titleSection font-normal
+      @apply text-[48px] leading-[55px] tracking-[0.2px] font-normal my-12
    }
 
    .title-section p {
-      @apply text-[28px] leading-[40px] tracking-[0.2px] text-secondText font-normal
+      @apply text-[28px] leading-[40px] tracking-[0.2px]  font-normal py-4
    }
 
    input[type="text"] {
       @apply bg-[#F4F4F4] border border-[#E8E8E8] box-border rounded-[39px] px-[39px] py-[19px] text-[14px] leading-[16px] tracking-[0.1px] text-textinput focus:outline-none focus-visible:outline-none;
    }
+
+   #pricing .item#white-template{
+      @apply bg-lightText text-titleSection;     
+   }
+   
+   #pricing .item#white-template h4, #pricing .item#white-template p, #pricing .item#white-template span, #pricing .item#white-template .curr {
+      @apply text-titleSection;
+   }
+
+   #pricing .item#white-template .recursive{
+      @apply text-secondText;
+   }
+   
+   #pricing .item#blue-template{
+      @apply bg-colorPrimary text-lightText py-24 px-10
+   }
+
+   #pricing .item#blue-template h4, #pricing .item#blue-template p, #pricing .item#blue-template span, #pricing .item#blue-template .curr, #pricing .item#blue-template .recursive{
+      @apply text-lightText;
+   } 
+
+   #pricing .item#blue-template a.button-primary{
+      @apply bg-lightText text-colorPrimary
+   }        
 }

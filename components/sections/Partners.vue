@@ -1,8 +1,8 @@
 <template>
   <section id="partner" class="my-[180px]">
     <div class="title-section text-center">
-       <h3>Partners</h3>
-       <p class="mt-7">Most calendars are designed for teams. Slate is designed for freelancers</p>
+       <h3 class="text-titleSection">Partners</h3>
+       <p class="text-secondText">Most calendars are designed for teams. Slate is designed for freelancers</p>
     </div>
     <div class="container">
        <div class="partners-list flex flex-wrap mt-[80px]">
