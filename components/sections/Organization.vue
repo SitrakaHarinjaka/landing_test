@@ -4,9 +4,9 @@
        <div class="organisation-content flex items-center w-full">
           <div class="description w-1/2">
              <div class="title-section text-left">
-                <h3>Fastest way to<br> 
+                <h3 class="text-titleSection">Fastest way to<br> 
                    organize</h3>
-                <p class="mb-[70px] mt-[28px]">Most calendars are designed for teams. Slate is designed for freelancers</p>
+                <p class="mb-[70px] mt-[28px] text-secondText">Most calendars are designed for teams. Slate is designed for freelancers</p>
                 <a class="button-primary" href="#">Try for free</a>
              </div>
           </div>
