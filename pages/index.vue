@@ -4,6 +4,7 @@
     <SectionsFeature/>
     <SectionsOrganization/>
     <SectionsNewsLetter/>
+    <SectionsPartners/>
   </div>
 </template>
 
