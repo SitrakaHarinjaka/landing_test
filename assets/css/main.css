@@ -58,8 +58,12 @@
       @apply text-[28px] leading-[40px] tracking-[0.2px]  font-normal py-4
    }
 
-   input[type="text"] {
+   input[type="text"], input[type="email"] {
       @apply bg-[#F4F4F4] border border-[#E8E8E8] box-border rounded-[39px] px-[39px] py-[19px] text-[14px] leading-[16px] tracking-[0.1px] text-textinput focus:outline-none focus-visible:outline-none;
+   }
+
+   textarea {
+      @apply bg-[#F4F4F4] border border-[#E8E8E8] box-border rounded-[10px] px-[39px] py-[19px] text-[14px] leading-[16px] tracking-[0.1px] text-textinput focus:outline-none focus-visible:outline-none
    }
 
    #pricing .item#white-template{
