@@ -29,8 +29,8 @@
           </div>
        </div>
        <div class="video relative shadow-[0_8px_63px_rgba(0,_0,_0,_0.3)] rounded-[44.8123px] overflow-hidden">
-          <div class="image-back w-full absolute top-0 left-0" :style="{ opacity: isPlaying ? '0' : '1' }">
-             <img src="~/assets/img/back-video.png" alt="" class="w-full h-auto">
+          <div class="image-back w-full h-full absolute top-0 left-0" :style="{ opacity: isPlaying ? '0' : '1' }">
+             <img src="~/assets/img/back-video.png" alt="" class="w-full h-full object-cover">
           </div>
           <div class="play-video absolute inset-0 h-max w-max m-auto z-[100]">
              <button id="play" class="bg-none border-none cursor-pointer" @click="playVideo" :style="{ opacity: isPlaying ? '0' : '1' }">
@@ -47,7 +47,7 @@
                 </svg>                  
              </button>
           </div>
-          <video class="video-play h-[725px] w-full object-cover" ref="videoRef">
+          <video class="video-play aspect-video	 w-full object-cover" ref="videoRef">
              <source src="/videos/video.mp4" type="video/mp4">
           </video>
        </div>

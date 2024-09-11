@@ -33,7 +33,119 @@
    .container {
       @apply w-full px-3 mx-auto max-w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
    }
+   @media screen and (max-width: 1200px) {
+      .logo{
+         @apply px-[25px] mr-auto
+      }
+      .social{
+         @apply hidden
+      }
+      .menu{
+         @apply fixed h-full w-full  top-0 left-[-100%] bg-lightText ;
+      }
+      .menu.open{
+         @apply left-0 ;
 
+      }
+      .menu a{ 
+         @apply text-colorPrimary text-xl	
+      }
+      .menu ul {
+         @apply text-center h-full flex flex-col justify-center
+      }
+      .menu ul li{
+         @apply block mx-0 py-3
+      }
+      .title-baneer h2{
+         @apply font-normal;
+      }
+      .text-titleSection{
+         @apply mb-[20px]
+      }
+      .feature-item{
+         @apply flex-col items-center
+      }
+      .feature-item .item{
+         @apply mb-[30px]
+
+      }
+      .play-video svg{
+         @apply w-[60px]
+      }
+      .organisation-content{
+         @apply flex-col text-center
+      }
+      .organisation-content .title-section{
+         @apply  text-center
+
+      }
+      .organisation-content .description {
+         @apply w-full
+      }
+      .organisation-content .image{
+         @apply w-full mt-[100px]
+
+      }
+      .newsletter-content{
+         @apply flex-col
+      }
+      .newsletter-content svg{
+         @apply w-full
+      }
+      .form input , .form button{
+         @apply w-full mb-[20px]
+      }
+      .partners-list{
+         @apply flex-col
+      }
+      .partners-list .item{
+         @apply w-full max-w-[273px] mx-auto mb-[20px]
+      }
+      .list-pricing{
+         @apply flex-col
+      }
+      .list-pricing .item{
+         @apply w-full mb-[20px]
+      }
+      .contact-container .formulaire{
+         @apply flex-col
+      }
+      .contact-container .formulaire form{
+         @apply w-full mb-[20px]
+
+      }
+      .contact-container .location{
+         @apply flex-col
+
+      }
+      .contact-container .location>div{
+         @apply flex-row w-full text-left
+
+      }
+      .contact-container .location>div p{
+         @apply ml-2
+      }
+      .contact-container .contact-content{
+         @apply w-full 
+      }
+      .footer-container{
+         @apply flex-col text-center
+      }
+      .footer-container .menus-footer{
+         @apply flex-col w-full 
+
+      }
+      .footer-container .menus-footer .item{
+         @apply  w-full 
+      }
+      .menus-footer .item li {
+         @apply  block
+
+      }
+      .footer-container .contact{
+         @apply pl-0 w-full max-w-[418px] mx-auto
+      }
+   }
    ul {
       @apply p-0 m-0 list-none;
    }

@@ -1,14 +1,18 @@
 <template>
   <div>
-    <PartialsHeader :menu="menuItem"/>
+    <PartialsHeader :state="state" :menu="menuItem"/>
 
-    <slot />
+    <slot  @showMenu="showMenu"/>
 
     <PartialsFooter/>
   </div>
 </template>
 
 <script lang="ts" setup>
+  const state  = ref(false);
+  const showMenu = () =>{
+    state.value = true
+  }
   const menuItem = ref([
     { label: "Home", link: "#home" },
     { label: "Product", link: "#product" },

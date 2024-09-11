@@ -20,7 +20,7 @@
 
              </form>
 
-             <div class="w-2/3 flex flex-col gap-12">
+             <div class="contact-content w-2/3 flex flex-col gap-12">
                 <div class="location flex items-center">
                   <div class="text-center address w-1/3 flex items-center flex-col">
                     <div>
