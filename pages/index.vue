@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SectionsBaneer/>
+    <SectionsBaneer   @addClassMenu="$emit('showMenu')"/>
     <SectionsFeature/>
     <SectionsOrganization/>
     <SectionsNewsLetter/>
