@@ -1,3 +1,228 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+   @font-face {
+      font-family: 'Graphik';
+      src: url('~/assets/fonts/GraphikRegular.eot');
+      src: local('☺'), url('~/assets/fonts/GraphikRegular.woff') format('woff'), url('~/assets/fonts/GraphikRegular.ttf') format('truetype'), url('~/assets/fonts/GraphikRegular.svg') format('svg');
+      font-weight: normal;
+      font-style: normal;
+   }
+   
+   @font-face {
+      font-family: 'Graphik';
+      src: url('~/assets/fonts/GraphikBold.eot');
+      src: local('☺'), url('~/assets/fonts/GraphikBold.woff') format('woff'), url('~/assets/fonts/GraphikBold.ttf') format('truetype'), url('~/assets/fonts/GraphikBold.svg') format('svg');
+      font-weight: bold;
+      font-style: bold;
+   }
+}
+
+@layer components {
+   body {
+      @apply m-0 p-0
+   }
+
+   header.show {
+      @apply hidden md:flex
+   }
+
+   .container {
+      @apply w-full px-3 mx-auto max-w-full sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1320px];
+   }
+   @media screen and (max-width: 1200px) {
+      .logo{
+         @apply px-[25px] mr-auto
+      }
+      .social{
+         @apply hidden
+      }
+      .menu{
+         @apply fixed h-full w-full  top-0 left-[-100%] bg-lightText ;
+      }
+      .menu.open{
+         @apply left-0 ;
+
+      }
+      .menu a{ 
+         @apply text-colorPrimary text-xl	
+      }
+      .menu ul {
+         @apply text-center h-full flex flex-col justify-center
+      }
+      .menu ul li{
+         @apply block mx-0 py-3
+      }
+      .title-baneer h2{
+         @apply font-normal;
+      }
+      .text-titleSection{
+         @apply mb-[20px]
+      }
+      .feature-item{
+         @apply flex-col items-center
+      }
+      .feature-item .item{
+         @apply mb-[30px]
+
+      }
+      .play-video svg{
+         @apply w-[60px]
+      }
+      .organisation-content{
+         @apply flex-col text-center
+      }
+      .organisation-content .title-section{
+         @apply  text-center
+
+      }
+      .organisation-content .description {
+         @apply w-full
+      }
+      .organisation-content .image{
+         @apply w-full mt-[100px]
+
+      }
+      .newsletter-content{
+         @apply flex-col
+      }
+      .newsletter-content svg{
+         @apply w-full
+      }
+      .form input , .form button{
+         @apply w-full mb-[20px]
+      }
+      .partners-list{
+         @apply flex-col
+      }
+      .partners-list .item{
+         @apply w-full max-w-[273px] mx-auto mb-[20px]
+      }
+      .list-pricing{
+         @apply flex-col
+      }
+      .list-pricing .item{
+         @apply w-full mb-[20px]
+      }
+      .contact-container .formulaire{
+         @apply flex-col
+      }
+      .contact-container .formulaire form{
+         @apply w-full mb-[20px]
+
+      }
+      .contact-container .location{
+         @apply flex-col
+
+      }
+      .contact-container .location>div{
+         @apply flex-row w-full text-left
+
+      }
+      .contact-container .location>div p{
+         @apply ml-2
+      }
+      .contact-container .contact-content{
+         @apply w-full 
+      }
+      .footer-container{
+         @apply flex-col text-center
+      }
+      .footer-container .menus-footer{
+         @apply flex-col w-full 
+
+      }
+      .footer-container .menus-footer .item{
+         @apply  w-full 
+      }
+      .menus-footer .item li {
+         @apply  block
+
+      }
+      .footer-container .contact{
+         @apply pl-0 w-full max-w-[418px] mx-auto
+      }
+   }
+   ul {
+      @apply p-0 m-0 list-none;
+   }
+
+   a {
+      @apply no-underline text-[15px] leading-[28px] text-lightText transition-colors duration-300 ease-in hover:text-colorPrimary
+   }
+
+   .button-primary {
+      @apply bg-colorPrimary border border-colorPrimary rounded-full text-lightText py-[16px] px-[62px] text-[20px] leading-[20px] tracking-[0.2px] text-center font-normal inline-block cursor-pointer transition-colors duration-300 ease-in-out hover:bg-lightText hover:text-colorPrimary;
+   }
+
+   .title-section {
+      @apply max-w-[560px] m-auto
+   }
+
+   .title-section h3 {
+      @apply text-[48px] leading-[55px] tracking-[0.2px] font-normal my-12
+   }
+
+   .title-section p {
+      @apply text-[28px] leading-[40px] tracking-[0.2px]  font-normal py-4
+   }
+
+   input[type="text"], input[type="email"] {
+      @apply bg-[#F4F4F4] border border-[#E8E8E8] box-border rounded-[39px] px-[39px] py-[19px] text-[14px] leading-[16px] tracking-[0.1px] text-textinput focus:outline-none focus-visible:outline-none;
+   }
+
+   textarea {
+      @apply bg-[#F4F4F4] border border-[#E8E8E8] box-border rounded-[10px] px-[39px] py-[19px] text-[14px] leading-[16px] tracking-[0.1px] text-textinput focus:outline-none focus-visible:outline-none
+   }
+
+   #pricing .item#white-template{
+      @apply bg-lightText text-titleSection;     
+   }
+   
+   #pricing .item#white-template h4, #pricing .item#white-template p, #pricing .item#white-template span, #pricing .item#white-template .curr {
+      @apply text-titleSection;
+   }
+
+   #pricing .item#white-template .recursive{
+      @apply text-secondText;
+   }
+   
+   #pricing .item#blue-template{
+      @apply bg-colorPrimary text-lightText py-24 px-10
+   }
+
+   #pricing .item#blue-template h4, #pricing .item#blue-template p, #pricing .item#blue-template span, #pricing .item#blue-template .curr, #pricing .item#blue-template .recursive{
+      @apply text-lightText;
+   } 
+
+   #pricing .item#blue-template a.button-primary{
+      @apply bg-lightText text-colorPrimary
+   }        
+
+   footer a {
+      @apply inline-block;
+   }
+
+   footer .contact {
+      @apply sm:mx-auto;
+   }
+
+   footer .contact .social li {
+      @apply inline-block mr-[30px] mt-[20px];
+   }
+
+   footer .contat .social .ul {
+      @apply sm:text-center;
+   }
+
+   footer li {
+      @apply flex items-center mb-5;
+   }
+
+   footer span {
+      @apply text-lightText text-sm leading-7 tracking-[0.2px] ml-4; 
+   }
+}
