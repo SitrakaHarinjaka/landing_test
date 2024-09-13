@@ -1,6 +1,6 @@
 <template>
   <div>
-    <PartialsHeader :state="state" :menu="menuItem"/>
+    <PartialsHeader :state="state" :menu="menuItem" @closeMenu="state = false"/>
     <SectionsBaneer @addClassMenu="showMenu"/>
 
     <slot/>
@@ -17,7 +17,7 @@
     { label: "About", link: "#about" },
     { label: "Contact", link: "#contact" },
   ]);
-  const state  = ref(false);
+  let state  = ref(false);
   const showMenu = () => state.value = true
 </script>
 
