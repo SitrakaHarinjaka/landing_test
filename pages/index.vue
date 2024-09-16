@@ -1,6 +1,5 @@
 <template>
   <div>
-    <SectionsBaneer   @addClassMenu="$emit('showMenu')"/>
     <SectionsFeature/>
     <SectionsOrganization/>
     <SectionsNewsLetter/>
