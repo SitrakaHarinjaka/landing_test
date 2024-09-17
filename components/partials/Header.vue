@@ -47,6 +47,14 @@
     menu: Array,
     state: Boolean
   });  
+
+  watch(() => props.state, (newState: Boolean) => {
+    if (newState) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+  });
   
 </script>
 <style>
