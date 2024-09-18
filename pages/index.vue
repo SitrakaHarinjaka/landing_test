@@ -1,5 +1,6 @@
 <template>
   <div>
+    <SectionsBaneer/>
     <SectionsFeature/>
     <SectionsOrganization/>
     <SectionsNewsLetter/>
